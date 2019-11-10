@@ -1,0 +1,14 @@
+<html>
+	<head><title>Your restaurant search</title></head>
+<body>
+
+		{% for bus in temp %}
+		<h1>{{bus['name']}}</h1>
+		<h1>{{bus['rating']}}</h1>
+		<h1>{{bus['review_count']}}</h1>
+		<h1>{{bus['location']['address1']}}</h1>
+		<h1>{{bus['location']['zip_code']}}</h1>
+		{% endfor %}
+
+</body>
+</html>
